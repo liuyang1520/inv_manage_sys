@@ -1,0 +1,34 @@
+{
+  "name": "invmans",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "mysql": "^2.11.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "An inventory management system developed with Node.js",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyang1520/invmans.git"
+  },
+  "keywords": [
+    "Inventory",
+    "Management"
+  ],
+  "author": "Marvin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuyang1520/invmans/issues"
+  },
+  "homepage": "https://github.com/liuyang1520/invmans#readme"
+}

@@ -13,6 +13,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "mysql": "^2.11.1",
+    "sequelize": "^3.24.3",
+    "sequelize-cli": "^2.4.0",
     "serve-favicon": "~2.3.0"
   },
   "description": "An inventory management system developed with Node.js",

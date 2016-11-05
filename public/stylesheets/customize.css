@@ -1,48 +1,57 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.home-menu {
+#header {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     background: #2d3e50;
 }
 
-.pure-menu.pure-menu-fixed {
+#header .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+    position: relative;
 }
 
-.home-menu .pure-menu-heading {
+#header .pure-menu-heading {
     color: white;
     font-weight: 400;
     font-size: 120%;
 }
 
-#header .home-menu .pure-menu-selected a {
+#header .pure-menu-selected a {
     color: white;
 }
 
-.home-menu a {
+#header a {
     color: #6FBEF3;
 }
-#header .home-menu li a:hover,
-#header .home-menu li a:focus {
+
+#header li a:hover,
+#header li a:focus {
     background: none;
     border: none;
     color: #AECFE5;
 }
 
+
+#sidebar.pure-u {
+	background: rgba(128, 128, 128, 0.25);
+}
+
+#sidebar .menu-item-divided {
+    border-top: 4px solid #607d8b;
+}
+
+#layout {
+	height: 100vh;
+}
+
 @media (min-width: 48em) {
-	.home-menu {
+	#header {
         text-align: left;
     }
-    .home-menu ul {
+    #header ul {
         float: right;
     }
 }

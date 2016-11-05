@@ -1,0 +1,19 @@
+extends layout.jade
+
+block content
+	h1= title
+	table.pure-table
+		thead
+			tr
+				- for (var item in content[0])
+					th #{item}
+		tbody
+			tr
+				- for (var row = 0; row < content.length; row++)
+					- var id_url = "./" + content[row][id]
+					- for (var item in content[row])
+						if item == "id"
+							td
+								a(href=content[row][item]) #{content[row][item]}
+						else
+							td #{content[row][item]}

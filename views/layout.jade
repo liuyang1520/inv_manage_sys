@@ -5,9 +5,12 @@ html
 		link(rel='stylesheet', href='/stylesheets/pure-min.css')
 		link(rel='stylesheet', href='/stylesheets/customize.css')
 		script(src='/javascripts/jquery-3.1.1.min.js')
+		script(src='/javascripts/bootbox.min.js')
 	body
 		include header.jade
 		#layout.pure-g
 			include sidebar.jade
-			#content.pure-u
+			#content.pure-u-3-4
 				block content
+			#filter.pure-u-1-8
+				block filter

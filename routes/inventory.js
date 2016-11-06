@@ -15,7 +15,15 @@ router.get('/tables/:tableName', function(req, res, next) {
 		});
 });
 
-router.get('/tables/:tableName/:id', function(req, res, next) {
+router.get('/tables/:tableName/:id(\\d+)', function(req, res, next) {
+	db.models[req.params['tableName']].findAll({raw: true})
+	.then(
+		function(results) {
+			res.render('tableList', { title: req.params['tableName'], content: results});
+		});
+});
+
+router.get('/tables/:tableName/insert/', function(req, res, next) {
 	db.models[req.params['tableName']].findAll({raw: true})
 	.then(
 		function(results) {
